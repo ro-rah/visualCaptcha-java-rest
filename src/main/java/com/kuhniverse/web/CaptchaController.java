@@ -67,6 +67,7 @@ public class CaptchaController {
     public void audio(@PathVariable String audioType, HttpServletResponse response) {
         CaptchaRepository.AudioType audioTypEnum = CaptchaRepository.AudioType.valueOf(audioType.toUpperCase());
         // TODO exeption handling if type not found
+        log.debug("TODO exeption handling if type not found");
         InputStream input = captchaSession.getAudio(audioTypEnum);
         MediaType contentType = MediaType.APPLICATION_OCTET_STREAM;
         writeResponse(contentType, input, response);
