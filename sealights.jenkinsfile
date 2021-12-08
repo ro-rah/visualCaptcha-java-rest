@@ -24,7 +24,7 @@ pipeline {
                      "logFolder": "/tmp",
                      "enabled": true
                 }' > slmaven.json
-                sh "echo \"Branch is ${BRANCH}\""
+                sh "echo \"Branch is \"${BRANCH}"
                 '''
             }
         }
