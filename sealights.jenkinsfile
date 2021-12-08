@@ -17,7 +17,7 @@ pipeline {
                      "packagesExcluded": "",
                      "recursive": true,
                      "includeResources": true,
-                     "executionType": "scanonly",
+                     "executionType": "full",
                      "logEnabled": false,
                      "logDestination": "console",
                      "logLevel": "off",
