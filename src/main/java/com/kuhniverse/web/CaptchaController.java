@@ -82,7 +82,7 @@ public class CaptchaController {
 
     @RequestMapping(value = "/try", method = RequestMethod.POST)
     public void validate(HttpServletRequest request, HttpServletResponse response) {
-        log.debug("Validating captcha response");
+        log.debug("Validating captcha response.");
         Enumeration<String> keys = request.getParameterNames();
         CaptchaData captchaData = new CaptchaData();
         while (keys.hasMoreElements()) {
